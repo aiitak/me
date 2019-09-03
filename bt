@@ -1,4 +1,27 @@
-宝塔Linux面板命令
+Centos安装命令：
+yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+
+试验性Centos/Ubuntu/Debian安装命令支持ipv6，注意使用root权限执行此命令
+curl -sSO http://download.bt.cn/install/new_install.sh && bash new_install.sh
+
+Ubuntu/Deepin安装命令：
+wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+
+Debian安装命令：
+wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
+
+Fedora安装命令:
+wget -O install.sh http://download.bt.cn/install/install_6.0.sh && bash install.sh
+
+
+Linux面板6.9.7升级命令：
+curl http://download.bt.cn/install/update6.sh|bash
+复制代码
+
+
+
+
+宝塔Linux面板命令大全
 安装宝塔
 Centos安装脚本
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
