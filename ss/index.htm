@@ -38,10 +38,10 @@
 <br>使用方法
 <br>使用root用户登录，依次运行以下命令：
 <br>
-<br>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-<br>chmod +x shadowsocks-all.sh
-<br>./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
- <br>
+<br>wget --no-check-certificate -O shadowsocks-all.sh http://git.yds.ink/ss/ss.sh
+<br>chmod +x ss.sh
+<br>./ss.sh 2>&1 | tee shadowsocks-all.log
+<br>
 <br>安装完成后，脚本提示如下
 <br>
 <br>Congratulations, your_shadowsocks_version install completed!
@@ -62,7 +62,7 @@
 <br>若已安装多个版本，则卸载时也需多次运行（每次卸载一种）
 <br>使用root用户登录，运行以下命令：
 <br>
-<br>./shadowsocks-all.sh uninstall
+<br>./ss.sh uninstall
 <br> 
 <br>启动脚本
 <br>启动脚本后面的参数含义，从左至右依次为：启动，停止，重启，查看状态。
@@ -95,7 +95,7 @@
 <br>
 <br>BBR plus
 <br>
-<br>wget "https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh 
+<br>wget "http://git.yds.ink/ss/tcp.sh" && chmod +x tcp.sh && ./tcp.sh 
 <br>
 <br>BBR
 <br>
@@ -103,7 +103,7 @@
 <br>让访问速度加速，飞起来！使用 BBR 加速工具。
 <br>
 <br>安装 BBR
-<br>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+<br>wget --no-check-certificate http://git.yds.ink/ss/bbr.sh
 <br>获取读写权限
 <br>chmod +x bbr.sh
 <br>启动BBR安装
