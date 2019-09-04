@@ -403,7 +403,7 @@ error_detect_depends(){
     ${command} > /dev/null 2>&1
     if [ $? -ne 0 ]; then
         echo -e "[${red}Error${plain}] Failed to install ${red}${depend}${plain}"
-        echo "Please visit: https://teddysun.com/486.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
         exit 1
     fi
 }
@@ -620,8 +620,8 @@ install_select(){
 
 install_prepare_password(){
     echo "Please enter password for ${software[${selected}-1]}"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    read -p "(Default password: yds.ink):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="yds.ink"
     echo
     echo "password = ${shadowsockspwd}"
     echo
@@ -899,7 +899,7 @@ install_shadowsocks_python(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[0]} install failed."
-        echo "Please visit: https://teddysun.com/486.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
         install_cleanup
         exit 1
     fi
@@ -921,7 +921,7 @@ install_shadowsocks_r(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[1]} install failed."
-        echo "Please visit; https://teddysun.com/486.html and contact."
+        echo "Please visit; http://git.yds.ink/ss/index.html and contact."
         install_cleanup
         exit 1
     fi
@@ -961,7 +961,7 @@ install_shadowsocks_go(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[2]} install failed."
-        echo "Please visit: https://teddysun.com/486.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
         install_cleanup
         exit 1
     fi
@@ -984,7 +984,7 @@ install_shadowsocks_libev(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[3]} install failed."
-        echo "Please visit: https://teddysun.com/486.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
         install_cleanup
         exit 1
     fi
@@ -1152,7 +1152,7 @@ install_main(){
     fi
 
     echo
-    echo "Welcome to visit: https://teddysun.com/486.html"
+    echo "Welcome to visit: http://git.yds.ink/ss/index.html"
     echo "Enjoy it!"
     echo
 }
