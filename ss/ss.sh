@@ -4,7 +4,7 @@ export PATH
 #
 # Auto install Shadowsocks Server (all version)
 #
-# Copyright (C) 2016-2019 Teddysun <i@teddysun.com>
+# Copyright (C) 2016-2019 yds <i@yds.ink>
 #
 # System Required:  CentOS 6+, Debian7+, Ubuntu12+
 #
@@ -899,7 +899,7 @@ install_shadowsocks_python(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[0]} install failed."
-        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.htm and contact."
         install_cleanup
         exit 1
     fi
@@ -921,7 +921,7 @@ install_shadowsocks_r(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[1]} install failed."
-        echo "Please visit; http://git.yds.ink/ss/index.html and contact."
+        echo "Please visit; http://git.yds.ink/ss/index.htm and contact."
         install_cleanup
         exit 1
     fi
@@ -961,7 +961,7 @@ install_shadowsocks_go(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[2]} install failed."
-        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.htm and contact."
         install_cleanup
         exit 1
     fi
@@ -984,7 +984,7 @@ install_shadowsocks_libev(){
     else
         echo
         echo -e "[${red}Error${plain}] ${software[3]} install failed."
-        echo "Please visit: http://git.yds.ink/ss/index.html and contact."
+        echo "Please visit: http://git.yds.ink/ss/index.htm and contact."
         install_cleanup
         exit 1
     fi
@@ -1013,7 +1013,7 @@ install_shadowsocks_libev_obfs(){
         make install
         if [ ! "$(command -v obfs-server)" ]; then
             echo -e "[${red}Error${plain}] simple-obfs for ${software[${selected}-1]} install failed."
-            echo "Please visit: https://teddysun.com/486.html and contact."
+            echo "Please visit: https://git.yds.ink/ss/index.htm and contact."
             install_cleanup
             exit 1
         fi
@@ -1152,7 +1152,7 @@ install_main(){
     fi
 
     echo
-    echo "Welcome to visit: http://git.yds.ink/ss/index.html"
+    echo "Welcome to visit: http://git.yds.ink/ss/index.htm"
     echo "Enjoy it!"
     echo
 }
