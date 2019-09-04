@@ -25,7 +25,6 @@ export PATH
 # @linusyang  <https://github.com/linusyang>
 # @Akkariiin  <https://github.com/Akkariiin>
 # 
-# Intro:  https://teddysun.com/486.html
 
 red='\033[0;31m'
 green='\033[0;32m'
