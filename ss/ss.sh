@@ -37,38 +37,38 @@ cur_dir=$( pwd )
 software=(Shadowsocks-Python ShadowsocksR Shadowsocks-Go Shadowsocks-libev)
 
 libsodium_file="libsodium-1.0.17"
-libsodium_url="http://git.yds.ink/ssh/libsodium-1.0.17.tar.gz"
+libsodium_url="http://git.yds.ink/ss/libsodium-1.0.17.tar.gz"
 
 mbedtls_file="mbedtls-2.16.0"
-mbedtls_url="http://git.yds.ink/ssh/mbedtls-2.16.0-gpl.tgz"
+mbedtls_url="http://git.yds.ink/ss/mbedtls-2.16.0-gpl.tgz"
 
 shadowsocks_python_file="shadowsocks-master"
-shadowsocks_python_url="https://github.com/shadowsocks/shadowsocks/archive/master.zip"
+shadowsocks_python_url="http://git.yds.ink/ss/master.zip"
 shadowsocks_python_init="/etc/init.d/shadowsocks-python"
 shadowsocks_python_config="/etc/shadowsocks-python/config.json"
-shadowsocks_python_centos="http://git.yds.ink/ssh/shadowsocks"
-shadowsocks_python_debian="http://git.yds.ink/ssh/shadowsocks-debian"
+shadowsocks_python_centos="http://git.yds.ink/ss/shadowsocks"
+shadowsocks_python_debian="http://git.yds.ink/ss/shadowsocks-debian"
 
 shadowsocks_r_file="shadowsocksr-3.2.2"
-shadowsocks_r_url="https://github.com/shadowsocksrr/shadowsocksr/archive/3.2.2.tar.gz"
+shadowsocks_r_url="http://git.yds.ink/ss/3.2.2.tar.gz"
 shadowsocks_r_init="/etc/init.d/shadowsocks-r"
 shadowsocks_r_config="/etc/shadowsocks-r/config.json"
-shadowsocks_r_centos="http://git.yds.ink/ssh/shadowsocksR"
-shadowsocks_r_debian="http://git.yds.ink/ssh/shadowsocksR-debian"
+shadowsocks_r_centos="http://git.yds.ink/ss/shadowsocksR"
+shadowsocks_r_debian="http://git.yds.ink/ss/shadowsocksR-debian"
 
 shadowsocks_go_file_64="shadowsocks-server-linux64-1.2.2"
-shadowsocks_go_url_64="https://dl.lamp.sh/shadowsocks/shadowsocks-server-linux64-1.2.2.gz"
+shadowsocks_go_url_64="http://git.yds.ink/ss/shadowsocks-server-linux64-1.2.2.gz"
 shadowsocks_go_file_32="shadowsocks-server-linux32-1.2.2"
-shadowsocks_go_url_32="https://dl.lamp.sh/shadowsocks/shadowsocks-server-linux32-1.2.2.gz"
+shadowsocks_go_url_32="http://git.yds.ink/ss/shadowsocks-server-linux32-1.2.2.gz"
 shadowsocks_go_init="/etc/init.d/shadowsocks-go"
 shadowsocks_go_config="/etc/shadowsocks-go/config.json"
-shadowsocks_go_centos="http://git.yds.ink/ssh/shadowsocks-go"
-shadowsocks_go_debian="http://git.yds.ink/ssh/shadowsocks-go-debian"
+shadowsocks_go_centos="http://git.yds.ink/ss/shadowsocks-go"
+shadowsocks_go_debian="http://git.yds.ink/ss/shadowsocks-go-debian"
 
 shadowsocks_libev_init="/etc/init.d/shadowsocks-libev"
 shadowsocks_libev_config="/etc/shadowsocks-libev/config.json"
-shadowsocks_libev_centos="http://git.yds.ink/ssh/shadowsocks-libev"
-shadowsocks_libev_debian="http://git.yds.ink/ssh/shadowsocks-libev-debian"
+shadowsocks_libev_centos="http://git.yds.ink/ss/shadowsocks-libev"
+shadowsocks_libev_debian="http://git.yds.ink/ss/shadowsocks-libev-debian"
 
 # Stream Ciphers
 common_ciphers=(
