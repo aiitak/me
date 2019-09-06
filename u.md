@@ -1,11 +1,11 @@
-推荐几个ubuntu16.04的下载地址
-中科大源
-http://mirrors.ustc.edu.cn/ubuntu-releases/16.04/
-　阿里云开源镜像站
-http://mirrors.aliyun.com/ubuntu-releases/16.04/
-　兰州大学开源镜像站
-http://mirror.lzu.edu.cn/ubuntu-releases/16.04/
-　北京理工大学开源
-http://mirror.bit.edu.cn/ubuntu-releases/16.04/
-　浙江大学
-http://mirrors.zju.edu.cn/ubuntu-releases/16.04/
+推荐几个ubuntu16.04的下载地址<br />
+中科大源<br />
+http://mirrors.ustc.edu.cn/ubuntu-releases/16.04/<br />
+　阿里云开源镜像站<br />
+http://mirrors.aliyun.com/ubuntu-releases/16.04/<br />
+　兰州大学开源镜像站<br />
+http://mirror.lzu.edu.cn/ubuntu-releases/16.04/<br />
+　北京理工大学开源<br />
+http://mirror.bit.edu.cn/ubuntu-releases/16.04/<br />
+　浙江大学<br />
+http://mirrors.zju.edu.cn/ubuntu-releases/16.04/<br />
