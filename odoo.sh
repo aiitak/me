@@ -37,7 +37,7 @@ CopyrightLogo='
 # 1. 中文字体，PDF报表，时间同步，SCSS编译等odoo支持组件
 # 2. postgres 10 安装在 /usr/lib/postgresql/10
 # 3. postgres 10 配置在 /etc/postgresql/10/main
-# 4. odoo 最新版 安装在 /usr/lib/python3/dist-packages/odoo
+# 4. odoo 最新版 安装在 /opt/odoo
 # 5. odoo 配置文件位于 /etc/odoo/odoo.conf
 # 6. Nginx 作为反向代理，开启了多worker工作模式，可使用odoo在线即时通讯
 # 7. odoo访问地址为(用你的域名代替 yourserver.com) http://yourserver.com 或者http://yourserver.com:8069
@@ -60,7 +60,7 @@ CURDIR=`/bin/pwd`
 U_Version=$(lsb_release -r --short)
 U_Version=${U_Version:0:2}
 O_USER="odoo"
-O_HOME="/usr/lib/python3/dist-packages/odoo"
+O_HOME="/opt/odoo"
 O_HOME_EXT="/$O_USER/${O_USER}-server"
 # 安装 WKHTMLTOPDF，默认设置为 True ，如果已安装则设置为 False.
 INSTALL_WKHTMLTOPDF="True"
@@ -320,17 +320,17 @@ function InstallOdoo()    {
     # 处理附加模块
     sudo npm install -g rtlcss
     # 设置个性化目录
-    sudo mkdir /usr/lib/python3/dist-packages/odoo/odoofile
-    sudo mkdir /usr/lib/python3/dist-packages/odoo/odoofile/filestore
-    sudo mkdir /usr/lib/python3/dist-packages/odoo/odoofile/sessions
-    sudo mkdir /usr/lib/python3/dist-packages/odoo/myaddons
-    sudo chown -R odoo:odoo /usr/lib/python3/dist-packages/odoo/odoofile/
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/odoofile
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/odoofile/filestore
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/odoofile/sessions
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/odoofile/addons
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/addons
-    sudo chmod -R 755 /usr/lib/python3/dist-packages/odoo/myaddons
+    sudo mkdir /opt/odoo/odoofile
+    sudo mkdir /opt/odoo/odoofile/filestore
+    sudo mkdir /opt/odoo/odoofile/sessions
+    sudo mkdir /opt/odoo/myaddons
+    sudo chown -R odoo:odoo /opt/odoo/odoofile/
+    sudo chmod -R 755 /opt/odoo/odoofile
+    sudo chmod -R 755 /opt/odoo/odoofile/filestore
+    sudo chmod -R 755 /opt/odoo/odoofile/sessions
+    sudo chmod -R 755 /opt/odoo/odoofile/addons
+    sudo chmod -R 755 /opt/odoo/addons
+    sudo chmod -R 755 /opt/odoo/myaddons
 }
 #--------------------------------------------------
 # 安装 Nginx 作为 web 转发，启用 polling
@@ -358,7 +358,7 @@ function InstallDone()    {
     echo "Port: $O_PORT"
     echo "User service: $O_USER"
     echo "User PostgreSQL: $O_USER"
-    echo "Code location: /usr/lib/python3/dist-packages/odoo"
+    echo "Code location: /opt/odoo"
     echo "Restart Odoo service: sudo service $O_CONFIG restart"
     echo "Or: sudo bash /root/r.sh"
     echo "Please Reboot the server to make chinese setting effective."
