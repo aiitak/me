@@ -1,1 +1,70 @@
-
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8' name='viewport' content='width=device-width,initial-scale=1,user-scalable=1'>
+<title>odoo自动安装脚本</title>
+<style>
+a{text-decoration:none}
+a:hover{text-decoration:none}
+</style>
+</head>
+<body>
+<h3>
+odoo自动安装脚本
+</h3>
+<p>
+wget https://git.yds.ink/odoo/odoo.sh && bash odoo.sh 2>&1 | tee odoo.log <br>
+</p>
+<br>
+<br>
+<h3>
+自动安装脚本解析
+</h3>
+==========================================================================<br>
+# 最近更新：2019-09-11<br>
+# 支持版本 Ubuntu 14.04, 15.04, 16.04 and 18.04<br>
+# 支持版本 python版本跟随操作秕，Ubuntu 14.04, 15.04, 16.04(Python3.5.2) and 18.04(Python3.6.7)<br>
+# 作者: Sui Yuan<br>
+# 支持: https://git.yds.ink<br>
+#-------------------------------------------------------------------------------<br>
+# 本脚本将安装Odoo到你的服务器上，一般而言，整个过程在3~5分钟完成<br>
+# 为使中文设置生效，建议重启一下机器。 执行 reboot<br>
+#-------------------------------------------------------------------------------<br>
+# 使用方法，直接在主机上执行以下指令<br>
+# wget https://git.yds.ink/odoo/odoo.sh && bash odoo.sh 2>&1 | tee odoo.log<br>
+#-------------------------------------------------------------------------------<br>
+# (1) 选择要安装的类型<br>
+# 1为从odoo官网安装odoo12，2为安装BDSQB odoo12，3为安装BDQYB odoo12(请联系购买)<br>
+# 4为从odoo官网安装odoo11，5为安装BDSQB odoo11，6为安装BDQYB odoo11(请联系购买)<br>
+# 7为从odoo官网安装odoo13<br>
+# 选择2时请确保 odoo_12.0.latest_all.deb 已上传至当前目录<br>
+# 选择3时请确保 odoo_12.0+e.latest_all.deb 已上传至当前目录<br>
+# 选择5时请确保 odoo_11.0.latest_all.deb 已上传至当前目录<br>
+# 选择6时请确保 odoo_11.0+e.latest_all.deb 已上传至当前目录<br>
+# 选择8时请确保 odoo_13.0alpha1.latest.zip 已上传至当前目录<br>
+# (2) 选择要安装的Postgresql 数据库<br>
+# 选择 PG9 版本将有更好兼容性，也可杜绝某些阿里云服务器无法访问最新 postgresql 官网源的问题<br>
+# 选择PG10 版本将有更好性能，部份阿里云服务器无法访问最新 postgresql 官网源会导致安装失败<br>
+# (3) 选择是否要安装Nginx<br>
+# 安装Nginx则可直接使用80端口访问odoo，同时可使用网站即时通讯<br>
+#-------------------------------------------------------------------------------<br>
+# 本脚本执行完成后，您将得到<br>
+#-------------------------------------------------------------------------------<br>
+# 1. 中文字体，PDF报表，时间同步，SCSS编译等odoo支持组件<br>
+# 2. postgres 10 安装在 /usr/lib/postgresql/10<br>
+# 3. postgres 10 配置在 /etc/postgresql/10/main<br>
+# 4. odoo 最新版 安装在 /opt/odoo<br>
+# 5. odoo 配置文件位于 /etc/odoo/odoo.conf<br>
+# 6. Nginx 作为反向代理，开启了多worker工作模式，可使用odoo在线即时通讯<br>
+# 7. odoo访问地址为(用你的域名代替 yourserver.com) http://yourserver.com 或者http://yourserver.com:8069<br>
+# 8. 一个 r.sh 文件用于重启 odoo 服务，使用root用户登录后键入bash r.sh 即可执行<br>
+# 9. 使用最新的pdf打印组件wkhtmltox 0.12.5 版本，打印更清晰<br>
+# 10.增加python库，主要支持企业版中 ical, ldap, esc/pos，参考 https://www.odoo.com/documentation/12.0/setup/install.html<br>
+#-------------------------------------------------------------------------------<br>
+# 如遇问题，可卸载 pg 及 odoo，重新安装<br>
+#-------------------------------------------------------------------------------<br>
+## sudo aptitude remove  -y postgresql-10<br>
+## sudo aptitude remove  -y odoo<br>
+==========================================================================<br>
+</body>
+</html>
