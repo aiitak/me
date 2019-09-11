@@ -1,13 +1,15 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset='utf-8' name='viewport' content='width=device-width,initial-scale=1,user-scalable=1'>
 	<title>宝塔linux面板命令大全 - 宝塔面板</title>
-	<meta name="keywords" content="LAMP一键安装包,LNMP一键安装包,免费主机管理系统,linux面板,windows面板,服务器运维" />
-	<meta name="description" content="宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持Linux与Windows系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过Web端轻松管理服务器。" />
 	<link href="/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="/Public/css/bt/reset.css" rel="stylesheet" type="text/css">
 	<link href="/Public/css/bt/common.css" rel="stylesheet" type="text/css">
+<style>
+a{text-decoration:none}
+a:hover{text-decoration:none}
+</style>
 </head>
 <body>
 	<div class="main">
@@ -45,13 +47,13 @@
 					<pre>cat /www/server/panel/data/port.pl</pre>
 					<span>修改面板端口，如要改成8881（centos 6 系统）</span>
 					<pre>echo '8881' > /www/server/panel/data/port.pl && /etc/init.d/bt restart
-                                             iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
-                                             service iptables save
-                                             service iptables restart</pre>
+iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
+service iptables save
+service iptables restart</pre>
 					<span>修改面板端口，如要改成8881（centos 7 系统）</span>
 					<pre>echo '8881' > /www/server/panel/data/port.pl && /etc/init.d/bt restart
-                                             firewall-cmd --permanent --zone=public --add-port=8881/tcp
-                                             firewall-cmd --reload</pre>
+firewall-cmd --permanent --zone=public --add-port=8881/tcp
+firewall-cmd --reload</pre>
 					<span>强制修改MySQL管理(root)密码，如要改成123456</span>
 					<pre>cd /www/server/panel && python tools.py root 123456</pre>
 					<span>修改面板密码，如要改成123456</span>
