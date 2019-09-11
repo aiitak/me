@@ -45,13 +45,13 @@
 					<pre>cat /www/server/panel/data/port.pl</pre>
 					<span>修改面板端口，如要改成8881（centos 6 系统）</span>
 					<pre>echo '8881' > /www/server/panel/data/port.pl && /etc/init.d/bt restart
-iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
-service iptables save
-service iptables restart</pre>
+                                             iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT
+                                             service iptables save
+                                             service iptables restart</pre>
 					<span>修改面板端口，如要改成8881（centos 7 系统）</span>
 					<pre>echo '8881' > /www/server/panel/data/port.pl && /etc/init.d/bt restart
-firewall-cmd --permanent --zone=public --add-port=8881/tcp
-firewall-cmd --reload</pre>
+                                             firewall-cmd --permanent --zone=public --add-port=8881/tcp
+                                             firewall-cmd --reload</pre>
 					<span>强制修改MySQL管理(root)密码，如要改成123456</span>
 					<pre>cd /www/server/panel && python tools.py root 123456</pre>
 					<span>修改面板密码，如要改成123456</span>
