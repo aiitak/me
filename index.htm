@@ -6,6 +6,8 @@
 <style>
 a{text-decoration:none}
 a:hover{text-decoration:none}
+.bor {border：1px dashed＃F00; width：300px; height：60px; margin-top：10px}
+span { display：block}
 </style>  
 </head>
 <body>	
@@ -15,16 +17,22 @@ a:hover{text-decoration:none}
 <p> 
 挂载之前，如果无法挂载或提示非LINUX分区。<br>
 可以使用格式化命令<br>
-mkfs.ext4 /dev/sdb<br>
+<div class = “bor”>
+mkfs.ext4 /dev/sdb
+</div>  
+<br>
 命令执行中输入y确认<br>
 完毕后即可执行如下命令。<br>
+<div class = “bor”>
 Centos/Fedora：<br>
 yum install wget -y && wget -O auto_disk.sh https://git.yds.ink/auto_disk.sh && bash auto_disk.sh<br>
 Ubuntu:<br>
 wget -O auto_disk.sh https://git.yds.ink/auto_disk.sh && sudo bash auto_disk.sh<br>
 Debian:<br>
-wget -O auto_disk.sh https://git.yds.ink/auto_disk.sh && bash auto_disk.sh<br>
+wget -O auto_disk.sh https://git.yds.ink/auto_disk.sh && bash auto_disk.sh
+</div> 
 </p>
+<br>
 <h3>
 odoo自动安装
 </h3>
