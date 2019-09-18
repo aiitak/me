@@ -1514,5 +1514,55 @@
     "replacement": "",
     "serialNumber": 102,
     "useTo": ""
+  },
+  {
+    "enable": true,
+    "id": 688,
+    "isRegex": false,
+    "regex": "阅读网址：",
+    "replaceSummary": "阅读网址：",
+    "replacement": "",
+    "serialNumber": 154,
+    "useTo": ""
+  },
+  {
+    "enable": true,
+    "id": 689,
+    "isRegex": false,
+    "regex": "＆笔趣阁",
+    "replaceSummary": "＆笔趣阁",
+    "replacement": "",
+    "serialNumber": 155,
+    "useTo": ""
+  },
+  {
+    "enable": true,
+    "id": 690,
+    "isRegex": false,
+    "regex": "＠笔趣库",
+    "replaceSummary": "＠笔趣库",
+    "replacement": "",
+    "serialNumber": 156,
+    "useTo": ""
+  },
+  {
+    "enable": true,
+    "id": 691,
+    "isRegex": false,
+    "regex": "笔趣阁",
+    "replaceSummary": "笔趣阁",
+    "replacement": "",
+    "serialNumber": 157,
+    "useTo": ""
+  },
+  {
+    "enable": true,
+    "id": 692,
+    "isRegex": false,
+    "regex": "笔趣库",
+    "replaceSummary": "笔趣库",
+    "replacement": "",
+    "serialNumber": 158,
+    "useTo": ""
   }
 ]
